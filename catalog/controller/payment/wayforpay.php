@@ -97,7 +97,7 @@ class ControllerPaymentWayforpay extends Controller
         if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/wayforpay.tpl')) {
             return $this->load->view($this->config->get('config_template') . '/template/payment/wayforpay.tpl', $data);
         } else {
-            return $this->load->view('default/template/payment/wayforpay.tpl', $data);
+            return $this->load->view('default/template/payment/wayforpay', $data);
         }
 
     }
